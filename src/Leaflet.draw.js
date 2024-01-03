@@ -85,66 +85,66 @@ L.drawLocal = {
 			// #TODO: this should be reorganized where actions are nested in actions
 			// ex: actions.undo  or actions.cancel
 			actions: {
-				title: 'Cancel drawing',
-				text: 'Cancel'
+				title: 'لغو ترسیم',
+				text: 'لغو'
 			},
 			finish: {
-				title: 'Finish drawing',
-				text: 'Finish'
+				title: 'اتمام ترسیم',
+				text: 'اتمام'
 			},
 			undo: {
-				title: 'Delete last point drawn',
-				text: 'Delete last point'
+				title: 'حذف آخرین نقطه',
+				text: 'خذف آخرین نقطه'
 			},
 			buttons: {
-				polyline: 'Draw a polyline',
-				polygon: 'Draw a polygon',
-				rectangle: 'Draw a rectangle',
-				circle: 'Draw a circle',
-				marker: 'Draw a marker',
-				circlemarker: 'Draw a circlemarker'
+				polyline: 'ترسیم خط',
+				polygon: 'ترسیم چند ضلعی',
+				rectangle: 'ترسیم مستطیل',
+				circle: 'ترسیم دایره',
+				marker: 'علامت گذاری',
+				circlemarker: 'دایره علامت گذاری'
 			}
 		},
 		handlers: {
 			circle: {
 				tooltip: {
-					start: 'Click and drag to draw circle.'
+					start: 'کیلک و کشیدن برای رسم دایره.'
 				},
-				radius: 'Radius'
+				radius: 'شعاع'
 			},
 			circlemarker: {
 				tooltip: {
-					start: 'Click map to place circle marker.'
+					start: 'برای قرار دادن علامت روی نقشه کلیک کنید.'
 				}
 			},
 			marker: {
 				tooltip: {
-					start: 'Click map to place marker.'
+					start: 'روی نقشه کلیک کنید.'
 				}
 			},
 			polygon: {
 				tooltip: {
-					start: 'Click to start drawing shape.',
-					cont: 'Click to continue drawing shape.',
-					end: 'Click first point to close this shape.'
+					start: 'برای رسم چند ضلعی کلیک کنید.',
+					cont: 'برای ادامه ترسیم کلیک کنید.',
+					end: 'برای اتمام روی نقطه شروع کلیک کنید.'
 				}
 			},
 			polyline: {
-				error: '<strong>Error:</strong> shape edges cannot cross!',
+				error: '<strong>خطاء:</strong> لبه های شکل نمی توانند متقاطع شوند!',
 				tooltip: {
-					start: 'Click to start drawing line.',
-					cont: 'Click to continue drawing line.',
-					end: 'Click last point to finish line.'
+					start: 'برای ترسیم خط کلیک کنید.',
+					cont: 'برای ادامه ترسیم کلیک کنید.',
+					end: 'برای اتمام روی نقطه شروع کلیک کنید.'
 				}
 			},
 			rectangle: {
 				tooltip: {
-					start: 'Click and drag to draw rectangle.'
+					start: 'کیلک و کشیدن برای رسم دایره.'
 				}
 			},
 			simpleshape: {
 				tooltip: {
-					end: 'Release mouse to finish drawing.'
+					end: 'برای اتمام موس را رها کنید.'
 				}
 			}
 		}
@@ -153,35 +153,35 @@ L.drawLocal = {
 		toolbar: {
 			actions: {
 				save: {
-					title: 'Save changes',
-					text: 'Save'
+					title: 'ذخیره تغییرات',
+					text: 'ذخیره'
 				},
 				cancel: {
-					title: 'Cancel editing, discards all changes',
-					text: 'Cancel'
+					title: 'لغو ویرایش، حذف همه تغییرات',
+					text: 'لغو'
 				},
 				clearAll: {
-					title: 'Clear all layers',
-					text: 'Clear All'
+					title: 'حذف تمام لایه ها',
+					text: 'پاک سازی همه'
 				}
 			},
 			buttons: {
-				edit: 'Edit layers',
-				editDisabled: 'No layers to edit',
-				remove: 'Delete layers',
-				removeDisabled: 'No layers to delete'
+				edit: 'ویرایش لایه ها',
+				editDisabled: 'لایه ای برای ویرایش نیست',
+				remove: 'حذف لایه ها',
+				removeDisabled: 'لایه ای برای حذف نیست'
 			}
 		},
 		handlers: {
 			edit: {
 				tooltip: {
-					text: 'Drag handles or markers to edit features.',
-					subtext: 'Click cancel to undo changes.'
+					text: 'برای ویرایش ویژگی‌ها، دستگیره‌ها یا نشانگرها را بکشید.',
+					subtext: 'برای لغو تغییرات روی لغو کلیک کنید.'
 				}
 			},
 			remove: {
 				tooltip: {
-					text: 'Click on a feature to remove.'
+					text: 'برای حذف روی یک ویژگی کلیک کنید.'
 				}
 			}
 		}
